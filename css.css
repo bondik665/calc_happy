@@ -1,0 +1,190 @@
+.main-search {
+    margin: 0 auto;
+}
+
+.form-calc {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.f1 {
+
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.f2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    height: 108px;
+    width: 300px;
+}
+
+.boxes1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.boxes2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.boxes3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.boxes4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+.f3 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.f4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    height: 108px;
+    width: 190px;
+}
+
+.boxes5 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.boxes6 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.boxes7 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.boxes8 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.f6 {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    width: 230px;
+
+    background-color: rgb(125, 223, 154);
+    text-align: center;
+    padding: 4px;
+    border-radius: 16px;
+}
+
+.PriceExit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.block_call_calc {
+
+    display: flex;
+    justify-content: center;
+}
+
+.block_call_calc a {
+    border: 1px solid orange;
+    width: 200px;
+
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+
+}
+
+
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+    width: 100px;
+
+    text-align: center;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked+label {
+    background: #ffe0a6;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+    color: #666;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled+label {
+    background: #efefef;
+    color: #666;
+}
+
+
+
+@media (max-width:600px) {
+    .f1 {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+
+
+/* кнопка */
+.linkBtn {
+    padding: 0.5em 1.5em; /* Расстояние от текста до края */
+    background-color: #71b2ae; /* Цвет фона */
+    color: #fff; /* Белый цвет текста */
+    border: none; /* Убираем рамку */
+    font-size: 1em; /* Размер шрифта */
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3); /* Тень у надписи */
+    margin-right: 1rem; /* Расстояние справа */
+    transition: background-color 0.4s, box-shadow 0.2s 0.3s; /* Время перехода */
+   }
+   .linkBtn:hover {
+    background-color: #3f8a7c; /* Цвет фона */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3f8a7c; /* Тень в виде рамки */
+   }

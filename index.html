@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+
+<body>
+
+    <search class='main-search'>
+        <form class="form-calc">
+            <section class="block">
+                <!-- !способ оплаты -->
+                <fieldset class="f1">
+                    <legend>Оргаинизатор</legend>
+                    <div class='boxes'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox1" name="group" value="22" checked>
+                            <label for="checkbox1">Физ. лицо</label>
+                        </div>
+                    </div>
+                    <div class='boxes'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox2" name="group" value="33">
+                            <label for="checkbox2">Юр. лицо</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="block1">
+                <!-- !количество гостей -->
+                <fieldset class="f2">
+                    <legend>Количество гостей</legend>
+                    <div class='boxes1 '>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox3" name="group1" value="5">
+                            <label for="checkbox3">до 15</label>
+                        </div>
+                    </div>
+                    <div class='boxes2'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox4" name="group1" value="10">
+                            <label for="checkbox4">от 15 до 50</label>
+                        </div>
+                    </div>
+                    <div class='boxes3'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox5" name="group1" value="20">
+                            <label for="checkbox5">от 50 до 100</label>
+                        </div>
+                    </div>
+                    <div class='boxes4'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox6" name="group1" value="100">
+                            <label for="checkbox6">от 100</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="block2">
+                <!-- !способ оплаты -->
+                <fieldset class="f3">
+                    <legend>Способ оплаты</legend>
+                    <div class='boxes'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox7" name="group2" value="22">
+                            <label for="checkbox7">наличные</label>
+                        </div>
+                    </div>
+                    <div class='boxes'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox8" name="group2" value="33">
+                            <label for="checkbox8">Безналичный</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="block3">
+                <!-- !Продолжительность -->
+                <fieldset class="f4">
+                    <legend>Продолжительность</legend>
+                    <div class='boxes5'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox9" name="group3" value="5">
+                            <label for="checkbox9">3 часа</label>
+                        </div>
+                    </div>
+                    <div class='boxes6'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox10" name="group3" value="10">
+                            <label for="checkbox10">1 день</label>
+                        </div>
+                    </div>
+                    <div class='boxes7'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox11" name="group3" value="20">
+                            <label for="checkbox11">2 дня</label>
+                        </div>
+                    </div>
+                    <div class='boxes8'>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="checkbox12" name="group3" value="100">
+                            <label for="checkbox12">3 дня</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <br>
+            <section class="f5">
+                <p>Выбрать день</p>
+                <!-- ! Выбор блок4 день недели -->
+                <select id="day">
+                    <option value="100">Понедельник</option>
+                    <option value="200">Вторник</option>
+                    <option value="300">Среда</option>
+                    <option value="400">Четверг</option>
+                    <option value="500">Пятница</option>
+                    <option value="600">Суббота</option>
+                    <option value="700">Воскресенье</option>
+                </select>
+                
+<br><br>
+                <button type="button" class="linkBtn " id="btnProduct">Рассчитать</button>
+
+            </section>
+
+
+            <!-- Вывод -->
+
+
+
+        </form>
+        <div id="infoProduct" class="total f6">
+            <div class="PriceExit">
+                <p class="total__Price">Ваша цена:</p>
+
+                <span id="priceProduct"></span> руб.
+            </div>
+
+        </div>
+
+
+        <div class="block_call_calc">
+            <a href="tel:+375292020327">Позвонить</a>
+        </div>
+
+    </search>
+
+
+
+
+
+
+    <script src="js-happy.js"></script>
+</body>
+
+</html>
